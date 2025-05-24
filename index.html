@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xdawn893 | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333; }
+    header { background: #1e90ff; color: white; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 3em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { margin-bottom: 20px; color: #1e90ff; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 { margin-bottom: 10px; }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to my GitHub Page!</h1>
-  <p>This is a simple website hosted on GitHub Pages.</p>
+
+  <header>
+    <h1>xdawn893</h1>
+    <p>Developer | Creator | Explorer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>xdawn893</strong>, a curious and passionate web developer who enjoys creating simple, clean, and functional websites. I’m constantly exploring new technologies and building projects for fun and learning.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>My First Project</h3>
+        <p>A sample project to showcase my skills. You can add your GitHub project link or description here.</p>
+      </div>
+      <div class="card">
+        <h3>Another Project</h3>
+        <p>This project highlights a different set of skills. You can include images or links to the actual work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Feel free to reach out at <a href="mailto:xdawn893@xmail.ru">xdawn893@xmail.ru</a></p>
+    <p>Connect with me:
+      <a href="https://github.com/xdawn893">GitHub</a> |
+      <a href="#">LinkedIn</a> <!-- Pwede mong palitan ito kung may LinkedIn ka -->
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 xdawn893</p>
+  </footer>
+
 </body>
 </html>
