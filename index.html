@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Daily Journey | dawnx893</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futuristic AI Landing Page</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      background: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-    <!-- Google Fonts para sa mas magandang typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
 
-    <!-- Link sa ating CSS file para sa design -->
-    <link rel="stylesheet" href="style.css">
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.5;
+    }
 
-    <!-- I-defer natin ang JS para mas mabilis mag-load ang page -->
-    <script defer src="script.js"></script>
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem;
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeInUp 2s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    .cta {
+      background: #7b2cbf;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 2.5s ease-out forwards;
+      animation-delay: 2s;
+      text-decoration: none;
+    }
+
+    .cta:hover {
+      background: #9d4edd;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-
-    <header class="main-header">
-        <h1>Araw-araw na Biyahe</h1>
-        <p>Mga kwento, aral, at sandali mula sa aking buhay.</p>
-    </header>
-
-    <main class="timeline-container">
-
-        <!-- ===== START NG ISANG ENTRY (ITO ANG KOKOPYAHIN MO PARA MAGDAGDAG) ===== -->
-        <div class="timeline-item hidden">
-            <!-- Halimbawang litrato. Palitan mo ang link o mag-upload ng sarili mong image. -->
-            <img src="https://picsum.photos/800/600?random=1" alt="Isang magandang tanawin" class="timeline-img">
-            <div class="timeline-content">
-                <h2>OCTOBER 26, 2023</h2>
-                <h3>Isang Bagong Simula</h3>
-                <p>Ngayon ang araw na sinimulan kong i-document ang aking mga karanasan. Parang isang blankong canvas, puno ng posibilidad. Naglakad-lakad ako sa park kanina at nakakita ng magandang paglubog ng araw. Simpleng bagay, pero nagbigay ng saya.</p>
-            </div>
-        </div>
-        <!-- ===== END NG ISANG ENTRY ===== -->
-
-
-        <!-- ===== START NG ISANG ENTRY ===== -->
-        <div class="timeline-item hidden">
-            <img src="https://picsum.photos/800/600?random=2" alt="Pagkain o kape" class="timeline-img">
-            <div class="timeline-content">
-                <h2>OCTOBER 25, 2023</h2>
-                <h3>Natutunang Leksyon sa Kusina</h3>
-                <p>Sinubukan kong mag-bake ng cake ngayon at sa kasamaang-palad, nasunog ito. Pero imbis na malungkot, natawa na lang ako. Ang mahalaga ay ang proseso at ang katapangang sumubok. Sa susunod, babantayan ko na ang oven timer!</p>
-            </div>
-        </div>
-        <!-- ===== END NG ISANG ENTRY ===== -->
-
-
-        <!-- ===== START NG ISANG ENTRY ===== -->
-        <div class="timeline-item hidden">
-            <img src="https://picsum.photos/800/600?random=3" alt="Libro o isang hobby" class="timeline-img">
-            <div class="timeline-content">
-                <h2>OCTOBER 24, 2023</h2>
-                <h3>Pagtuklas sa Isang Lumang Libro</h3>
-                <p>Habang naglilinis ng mga gamit, nakita ko ang isang lumang libro na binigay pa sa akin noong bata ako. Binalikan ko ang mga alaala. Minsan, ang mga pinaka-mahalagang kayamanan ay nakatago lang sa ating tabi.</p>
-            </div>
-        </div>
-        <!-- ===== END NG ISANG ENTRY ===== -->
-
-    </main>
-
-    <footer class="main-footer">
-        <p>© 2023 dawnx893. All Rights Reserved.</p>
-    </footer>
-
+  <div class="hero">
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="df155a97a7632971934c9ef771443e24.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1>Next-Gen AI Technology</h1>
+      <p>Experience a modern, intelligent, and interactive future. Powered by innovation and deep science.</p>
+      <a class="cta" href="https://dawnx893.github.io/-/">Visit Site</a>
+    </div>
+  </div>
 </body>
-      </html>
+</html>
+
